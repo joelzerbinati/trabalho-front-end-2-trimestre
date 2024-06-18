@@ -1,0 +1,39 @@
+@keyframes dynamic-animation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100px); }
+}
+
+#topic1 {
+    animation: dynamic-animation 3s ease-in-out infinite;
+}
+
+#topic2 {
+    animation: dynamic-animation 3s linear infinite;
+}
+
+#topic3 {
+    animation: dynamic-animation 3s ease-in infinite;
+}
+
+#topic4 {
+    animation: dynamic-animation 3s ease-out infinite;
+}
+
+#topic5 {
+    animation: dynamic-animation 3s ease-in-out infinite;
+}
+
+#topic6 {
+    /* Custom timing function for each phase of the transition */
+    animation: dynamic-animation 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+/* Common styles for all topics */
+div {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px; /* Spacing between topics */
+}
